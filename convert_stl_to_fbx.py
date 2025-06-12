@@ -2,7 +2,7 @@ import bpy
 import sys
 
 argv = sys.argv
-argv = argv[argv.index("--") + 1:]  # Get only custom args
+argv = argv[argv.index("--") + 1:]  # Get only custom arguements. 
 
 stl_path = argv[0]
 fbx_path = argv[1]
