@@ -11,6 +11,9 @@ fbx_path = argv[1]
 bpy.ops.object.select_all(action='SELECT')
 bpy.ops.object.delete(use_global=False)
 
+# Import the STL file
+bpy.ops.wm.stl_import(filepath=stl_path)
+
 
 # Export to FBX
 bpy.ops.export_scene.fbx(filepath=fbx_path)
